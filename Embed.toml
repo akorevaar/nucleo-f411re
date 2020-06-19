@@ -7,7 +7,7 @@ halt_afterwards = false
 restore_unwritten_bytes = false
 
 [general]
-chip = "stm32f401re"
+chip = "stm32f411re"
 chip_descriptions = []
 log_level = "Warn"
 

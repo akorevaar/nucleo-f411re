@@ -1,12 +1,19 @@
-## Support package for the [Nucleo-f401re](https://www.st.com/en/evaluation-tools/nucleo-f401re.html) board.
+## Support package for the [Nucleo-f411re](https://www.st.com/en/evaluation-tools/nucleo-f411re.html) board.
 
-### How to use the examples:
+### Some dependencies
 
-1. Clone this repository
+Assuming you already have cargo, and general embedded development tools (gdb, openocd, libusb-1.0). 
+Install the following: 
 
+    cargo install cargo-flash
+    cargo install cargo-embed
+    rustup target add thumbv7em-none-eabihf
+  
+For more help, see https://rust-embedded.github.io/cortex-m-quickstart/cortex_m_quickstart/
+    
 #### Flash using Probe.rs
 
-```cargo flash --chip stm32f401re --example button-interrupt```
+```cargo flash --chip stm32f411re --example button-interrupt```
 
 Or with cargo embed
 
@@ -21,4 +28,5 @@ The updater can be found at: https://www.st.com/en/development-tools/stsw-link00
  * User button on PC13
  * Serial port through ST-LINK on USART2, Tx: PA2 and Rx: PA3.
 
-This repository is based on https://github.com/therealprof/stm32f407g-disc
+This repository is based on https://github.com/jkristell/nucleo-f401re 
+(which is based on https://github.com/therealprof/stm32f407g-disc)

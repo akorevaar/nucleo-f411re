@@ -8,7 +8,7 @@ use cortex_m::peripheral::Peripherals;
 use cortex_m_rt::entry;
 use panic_rtt_target as _;
 
-use nucleo_f401re::{
+use nucleo_f411re::{
     hal::{
         interrupt,
         prelude::*,

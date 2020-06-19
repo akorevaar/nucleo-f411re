@@ -4,14 +4,14 @@
 use panic_rtt_target as _;
 use rtt_target::{rprintln, rtt_init_print};
 
-use nucleo_f401re::{
+use nucleo_f411re::{
     hal::{gpio::Edge, prelude::*},
     Button, Led,
 };
 
 use rtfm::app;
 
-#[app(device = nucleo_f401re::pac, peripherals = true)]
+#[app(device = nucleo_f411re::pac, peripherals = true)]
 const APP: () = {
     struct Resources {
         button: Button,

@@ -1,16 +1,16 @@
 [package]
-authors = ["Johan Kristell <johan@jott.se>"]
-name = "nucleo-f401re"
+authors = ["Agnetha Korevaar <>"]
+name = "nucleo-f411re"
 version = "0.4.0"
 edition = "2018"
-description = "Board Support crate for the STM32 NUCLEO-f401RE development board"
-repository = "https://github.com/jkristell/nucleo-f401re"
+description = "Board Support crate for the STM32 NUCLEO-f411RE development board"
+repository = "https://github.com/akorevaar/nucleo-f411re"
 readme = "README.md"
 license = "0BSD"
 keywords = [
     "arm",
     "cortex-m",
-    "stm32f401",
+    "stm32f411",
     "nucleo",
     "template",
 ]
@@ -29,7 +29,7 @@ version = "0.2.3"
 
 [dependencies.stm32f4xx-hal]
 default-features = false
-features = ["rt", "stm32f401"]
+features = ["rt", "stm32f411"]
 version = "0.8.0"
 
 [dev-dependencies]
